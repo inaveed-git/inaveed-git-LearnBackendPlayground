@@ -1,0 +1,93 @@
+
+
+
+
+
+nodejs
+
+
+that use javascript to run it out side the brower 
+Run javascript in the envirment dont need brower/engine for running
+like chrome use the engine v8 
+
+
+npm 
+
+that is a package or a pre writen code by developer to other developer to use it.
+we need to require/import the npm after install
+-- how to install --
+in the terminal we write 
+npm i npm_Name or npm install npm_Name
+
+
+
+-- How to create server in nodejs 
+
+first require nodejs prebuild package http
+
+const http = require('http');
+then we need to use the http server property 
+const server = http.createServer((req , res)=>{
+
+
+
+
+});
+
+
+This take two param req and res
+req by the user
+res send by the app or server through 
+
+
+now server created run now to run
+
+server.listen(port , ()=>{
+    console.log("The server is running on port" )
+});
+
+
+
+// module
+
+
+thay are like transfer the file code from one page to another 
+if you see when we require/import  a package that mean we are using module
+you can also create your own module and transfer it 
+
+
+how to create module
+
+file one 
+sum.js
+
+const sum (a , b)=>{
+return a +  b ;
+}
+
+we can transfer it two way 
+by using module.exports = sum
+or exports defult sum  
+
+but we will focus on exports and import 
+you can now exports this sum file many way 
+1 - exports default sum    this mean in exports file you can give any name to it 
+2 - exports {sum}  that mean in exports file you can not give any name to it you just need to import the same name
+or 
+3 - you can also import file with code at same time
+import sum(a , b)=>{
+return a +b 
+}
+4- you can import many file at same time
+import {sum , div}
+
+
+secound file the take the import file
+
+you can write 
+export sum from "your module_location"
+export sum from "./sum.js"
+
+
+note: in import and export you need to add the "type": "module" in package.json file 
+then this will work 
