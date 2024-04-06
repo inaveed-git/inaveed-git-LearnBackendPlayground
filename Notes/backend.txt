@@ -1,0 +1,16 @@
+What is is backend ?
+
+So the work of backend is to manipulate the database data.
+to create the api that fetch data from backend
+backend create api that help the frontend fetch data 
+and frontend show data on screen
+
+for example we have crud operation so the backend create api for this crud operation and frontend use those api to create frontend for it 
+
+Backend have two parts
+
+one: server 
+where it help as to run our app and all the api are located in server 
+server is program
+api Appliation programming interface 
+that help user and database send data between each other 
