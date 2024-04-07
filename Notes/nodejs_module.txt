@@ -91,3 +91,78 @@ export sum from "./sum.js"
 
 note: in import and export you need to add the "type": "module" in package.json file 
 then this will work 
+
+
+
+Fs module 
+
+this module help us to read , write and delete files 
+in this fs file mangement system you can create update delete file in the way of 
+async and sync way 
+
+async is void can not return value
+sync is not void can return value
+
+
+import fs from 'fs'
+
+
+and async always take the callback 
+bt sync dont take callback
+
+fs.writeFile('fileLocation' , 'data in that file' , ((err)=>{}) );
+fs.writeFileAysnc('fileLocation' , 'data in the file');
+
+writeFile/writeFileAysnc use to create file
+
+fs.readFile('fileLocation' , 'decoding type'  , ((err , res)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log(res)
+    }
+}))
+decoding type = how you gona see the file in which way  == 'Utf-8'
+
+fs.readFileAsync('fileLocation' , 'decoding type' )
+
+
+readFile and readFileAsync is used to readTheFile that have beeen saved
+
+
+fs.append('fileLocation' , 'adding data' , ((err)=>{
+
+}))
+fs.appendAsync('fileLocation' , 'adding data' )
+
+append and appendAsync is used for to add the data to exist file that has located  not override data like writeFile
+
+
+fs.unlinkSync("fileLocation")
+fs.unlink("fileLocation" , callback())
+
+
+unlink and unlinkSync use for to delete the file 
+
+PATH module
+
+this module work with path of the folder and file
+this module give address/location/extension and many more
+
+import path form 'path'
+
+path.join("c:\\" , "program\\vide.mp4");
+
+output:  c:\program\vide.mp4
+this path.join is used for to join to path 
+
+
+path.dirname()
+this path.dirname is used for absloute path mean give the location of file where it located
+give the location of file where it is located
+
+path.extname("c:\\program\\video.mp4")
+this path.extname use for give the extension of file 
+like here the extension is mp4 
+
+

@@ -14,3 +14,27 @@ where it help as to run our app and all the api are located in server
 server is program
 api Appliation programming interface 
 that help user and database send data between each other 
+
+
+WHAT IS METHOD
+
+GET , POST , PUT , DELETE 
+
+THIS METHOD help as to interact with client with database
+
+GET: this is use to  get data from database or url.
+POST: this is use for to send data to database.
+PUT: this is use for to update the extension data in the database.
+DELETE: this is use for to DELETE the data from database.
+
+
+every method have its own use in there own way
+
+EXPRESS
+
+
+this is a web-framwork  used to make the nodejs easy to use 
+EXPRESS is package you need to understand through npm i express
+make it easy for developer to read and wirte the code in easy way as compare to nodejs use.
+
+easy to use as compare to nodejs
